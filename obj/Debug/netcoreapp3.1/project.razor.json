@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Login.cshtml",
+      "TargetPath": "Views\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

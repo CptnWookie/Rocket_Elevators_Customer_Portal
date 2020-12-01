@@ -163,3 +163,4 @@ E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Iden
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Login.cshtml.g.cs
