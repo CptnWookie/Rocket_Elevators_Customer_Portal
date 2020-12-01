@@ -159,3 +159,6 @@ E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\staticwebassets\
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Rocket_Elevators_Customer_Portal.dll
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Rocket_Elevators_Customer_Portal.pdb
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
