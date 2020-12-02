@@ -10,7 +10,7 @@ using Rocket_Elevators_Customer_Portal.Areas.Identity.Data;
 namespace Rocket_Elevators_Customer_Portal.Migrations
 {
     [DbContext(typeof(Rocket_Elevators_Customer_PortalIdentityDbContext))]
-    [Migration("20201201023454_CreateIdentitySchema")]
+    [Migration("20201201190755_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

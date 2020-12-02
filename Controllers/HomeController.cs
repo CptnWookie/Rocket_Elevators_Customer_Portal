@@ -23,7 +23,35 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Portal()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Buildings()
+        {
+            return View();
+        }
+        public IActionResult Batteries()
+        {
+            return View();
+        }
+        public IActionResult Columns()
+        {
+            return View();
+        }
+
+        public IActionResult Elevators()
+        {
+            return View();
+        }
+
+        public IActionResult Interventions()
         {
             return View();
         }

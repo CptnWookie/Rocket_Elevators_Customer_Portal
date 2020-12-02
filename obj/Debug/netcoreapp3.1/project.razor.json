@@ -14392,8 +14392,33 @@
   "RootNamespace": "Rocket_Elevators_Customer_Portal",
   "Documents": [
     {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Batteries.cshtml",
+      "TargetPath": "Views\\Home\\Batteries.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\_Layout (copy).cshtml",
+      "TargetPath": "Views\\Shared\\_Layout (copy).cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Interventions.cshtml",
+      "TargetPath": "Views\\Home\\Interventions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Portal.cshtml",
+      "TargetPath": "Views\\Home\\Portal.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14407,13 +14432,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Login.cshtml",
-      "TargetPath": "Views\\Login.cshtml",
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Buildings.cshtml",
+      "TargetPath": "Views\\Home\\Buildings.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14437,13 +14467,38 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\_layout.cshtml",
+      "TargetPath": "Views\\Shared\\_layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Elevators.cshtml",
+      "TargetPath": "Views\\Home\\Elevators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\_Portal_Layout copy.cshtml",
+      "TargetPath": "Views\\Shared\\_Portal_Layout copy.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Columns.cshtml",
+      "TargetPath": "Views\\Home\\Columns.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
     }
   ],
