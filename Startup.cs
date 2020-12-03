@@ -32,7 +32,7 @@ namespace Rocket_Elevators_Customer_Portal
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
