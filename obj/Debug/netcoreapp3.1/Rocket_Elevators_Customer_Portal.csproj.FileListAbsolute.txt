@@ -170,7 +170,6 @@ E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\staticwebassets\
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Batteries.cshtml.g.cs
-E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Buildings.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Columns.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Elevators.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Interventions.cshtml.g.cs

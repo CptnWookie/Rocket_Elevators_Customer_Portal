@@ -2,4 +2,50 @@
     ViewData["Title"] = "Elevators";
 }
 
-<h1>Elevators !</h1>
+@{
+    ViewData["Title"] = "Buildings";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Elevators</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="productTable" class="table table-bordered table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>Elevator ID</th>
+                            <th>Serial Number</th>
+                            <th>Elevator Model</th>
+                            <th>Elevator Type</th>
+                            <th>Elevator Status</th>
+                            <th>Date of Commissioning</th>
+                            <th>Date of Last Inspection</th>
+                            <th>Certificate of Operation</th>
+                            <th>Information</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

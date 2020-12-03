@@ -2,4 +2,46 @@
     ViewData["Title"] = "Columns";
 }
 
-<h1>Columns !</h1>
+@{
+    ViewData["Title"] = "Buildings";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Columns</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="productTable" class="table table-bordered table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>Column ID</th>
+                            <th>Column Type</th>
+                            <th>Column Status</th>
+                            <th>Number of Floors Served</th>
+                            <th>Information</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
