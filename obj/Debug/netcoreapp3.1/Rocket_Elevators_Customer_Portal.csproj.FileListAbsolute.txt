@@ -174,3 +174,7 @@ E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Elevators.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Interventions.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Portal.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\DataSqlClient.dll
+E:\Git\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Git\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Git\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
