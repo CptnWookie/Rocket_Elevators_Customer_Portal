@@ -9,104 +9,88 @@
 </div>
 
 <div class="container">
-  <form>
+  <form class="col-md-3 align-center text-center">
+          
+      <div class="form-group">
+        @* <label for="author">Author</label> *@
+        <input type="hidden" class="form-control" id="author" name="author">
+      </div>
+
+      <div class="form-group">
+        @* <label for="customer">Customer</label> *@
+        <input type="hidden" class="form-control" id="customer" name="customer">
+      </div>
+      
+      <div class="form-group">
+        <label for="building">Building</label>
+        <select class="form-control" id="customer" name="customer">
+          <option value="test">Test</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Building">Building</label><br>
+        <select class="form-control" id="Building" name="Building">
+          <option value="test">Test</option>
+        </select>
+      </div>
+        
+      <div class="form-group">
+        <label for="Battery">Battery</label><br>
+        <select class="form-control" id="Battery" name="Battery">
+          <option value="test">Test</option>
+        </select>
+      </div>
+        
+      <div class="form-group">
+        <label for="Column">Column</label><br>
+        <select class="form-control" id="column" name="column">
+          <option value="test">Test</option>
+        </select>
+      </div>
+            
+      <div class="form-group">
+        <label for="Elevator">Elevator</label><br>
+        <select class="form-control" id="elevator" name="elevator">
+          <option value="test">Test</option>
+        </select>
+      </div>
+            
+      <div class="form-group">      
+        <label for="Employee">Employee</label><br>
+        <select class="form-control" id="employee" name="employee">
+          <option value="test">Test</option>
+        </select>
+      </div>
+            
+      <div class="form-group">
+        @* <label for="StartIntervention">StartIntervention</label><br> *@
+        <input type="hidden" class="form-control" id="startintervention" name="startintervention" value="">
+      </div>
+
+      <div class="form-group">
+        @* <label for="EndIntervention">EndIntervention</label><br> *@
+        <input type="hidden" class="form-control" id="endintervention" name="endintervention" value="">
+      </div>
+
+      <div class="form-group">
+        @* <label for="Result">Result</label><br> *@
+        <input type="hidden" class="form-control" id="result" name="result" value="Incomplete">
+      </div>
+
+      <div class="form-group">  
+        <label for="Report">Report</label><br>
+        <textarea class="form-control" id="report" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">  
+        @* <label for="Status">Status</label><br> *@
+        <input type="hidden" class="form-control" id="status" name="status" value="Pending">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     
-    <div class="row justify-content-center text-center">
-      @* <label for="Author">Author</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="hidden" id="author" name="author" value="customer_company_contact_name">
-    </div>
-
-    <div class="row justify-content-center text-center">
-      @* <label for="Customer">Customer</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="hidden" id="customer" name="customer" value="customer_id">
-    </div>
-
-    <div class="row justify-content-center text-center">
-      <label for="Building">Building</label><br>
-    </div>
-    <div class="row justify-content-center text-center">
-      <select id="Building" name="Building">
-        <option value="test">Test</option>
-      </select>
-    </div>
-      
-    <div class="row justify-content-center text-center">
-      <label for="Battery">Battery</label><br>
-    </div>
-    <div class="row justify-content-center text-center">
-      <select id="Battery" name="Battery">
-        <option value="test">Test</option>
-      </select>
-    </div>
-      
-    <div class="row justify-content-center text-center">
-      <label for="Column">Column</label><br>
-    </div>
-    <div class="row justify-content-center text-center">
-      <select id="column" name="column">
-        <option value="test">Test</option>
-      </select>
-    </div>
-          
-    <div class="row justify-content-center text-center">
-      <label for="Elevator">Elevator</label><br>
-    </div>
-    <div class="row justify-content-center text-center">  
-      <select id="elevator" name="elevator">
-        <option value="test">Test</option>
-      </select>
-    </div>
-          
-    <div class="row justify-content-center text-center">      
-      <label for="Employee">Employee</label><br>
-    </div>
-    <div class="row justify-content-center text-center">
-      <select id="employee" name="employee">
-        <option value="test">Test</option>
-      </select>
-    </div>
-          
-    <div class="row justify-content-center text-center">
-      @* <label for="StartIntervention">StartIntervention</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="hidden" id="startintervention" name="startintervention" value="">
-    </div>
-
-    <div class="row justify-content-center text-center">
-      @* <label for="EndIntervention">EndIntervention</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="hidden" id="endintervention" name="endintervention" value="">
-    </div>
-
-    <div class="row justify-content-center text-center">
-      @* <label for="Result">Result</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="hidden" id="result" name="result" value="Incomplete">
-    </div>
-
-    <div class="row justify-content-center text-center">  
-      <label for="Report">Report</label><br>
-    </div>
-    <div class="row justify-content-center text-center">
-      <input type="text" id="report" name="report" width="200" height="100">
-    </div>
-
-    <div class="row justify-content-center text-center">  
-      @* <label for="Status">Status</label><br> *@
-    </div>
-    <div class="row justify-content-center text-center">  
-      <input type="hidden" id="status" name="status" value="Pending">
-    </div>
-    </br>
-    <div class="row justify-content-center text-center">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
 </form>
 </div>
