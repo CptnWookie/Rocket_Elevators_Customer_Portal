@@ -15,6 +15,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "IISX-Production": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
     "Rocket_Elevators_Customer_Portal": {
       "commandName": "Project",
       "launchBrowser": true,
@@ -23,5 +30,6 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
+    
   }
 }
