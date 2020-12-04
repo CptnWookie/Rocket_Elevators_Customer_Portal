@@ -36,6 +36,32 @@
         </div>
     </div>
 
+    @* <script>
+        const data = null;
+        const xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open("GET", "https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries");
+        xhr.send(data);
+
+        Get Batteries data
+            string url1 = "https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries";
+            WebRequest request = HttpWebRequest.Create(url1);
+            WebResponse response = request.GetResponse();
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string Customer_JSON_List = reader.ReadToEnd();
+            List<Batteries> BList = new List<Batteries>();
+            List<Batteries> objResponse =
+            JsonConvert.DeserializeObject<List<Batteries>>(Customer_JSON_List);
+    
+    </script> *@
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
