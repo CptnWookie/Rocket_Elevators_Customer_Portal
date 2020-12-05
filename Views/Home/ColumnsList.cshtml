@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Columns";
-    var l = ViewBag.columns;
+    var col = ViewBag.columns;
 }
 
 <div class="container">
@@ -25,7 +25,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var column in l )
+
+                    @* // Will use the ViewBag method to get each of the following component *@
+                    @foreach (var column in col )
                     {
                         <tr>
                             <td>@column.Id</td>

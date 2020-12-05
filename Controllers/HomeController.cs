@@ -18,10 +18,6 @@ using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Authentication;
 using System.Web;
 
-
-
-
-
 namespace Rocket_Elevators_Customer_Portal.Controllers
 {
     [Authorize]
@@ -57,85 +53,99 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
             return View();
         }
 
-        public IActionResult BatteriesList()
+        // This will get all the batteries for a Customer based on the CustomerId using the REST API and the endpoint created.
+        public IActionResult BatteriesList(string email)
         {
             // http response for batteries
             HttpClient battclient = new HttpClient();
             var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
-            // var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/1/Batteries").GetAwaiter().GetResult();
             Console.WriteLine(resbatt);
 
-            List<Battery> k = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
+            List<Battery> batt = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
 
-            ViewBag.batteries = k;
-            
+            ViewBag.batteries = batt;
+
             return View();
         }
 
+        // This will get all the columns for a Customer based on the CustomerId using the REST API and the endpoint created.
         public IActionResult ColumnsList()
         {
             HttpClient colclient = new HttpClient();
             var rescol = colclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
             Console.WriteLine(rescol);
 
-            List<Column> l = JsonConvert.DeserializeObject<List<Column>>(rescol);
+            List<Column> col = JsonConvert.DeserializeObject<List<Column>>(rescol);
 
-            ViewBag.columns = l;
+            ViewBag.columns = col;
 
             return View();
         }
 
+        // This will get all the elevators for a Customer based on the CustomerId using the REST API and the endpoint created.
         public IActionResult ElevatorsList()
         {
             HttpClient elevclient = new HttpClient();
             var reselev = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
             Console.WriteLine(reselev);
 
-            List<Elevator> m = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
+            List<Elevator> elv = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
 
-            ViewBag.elevators = m;
+            ViewBag.elevators = elv;
 
             return View();
         }
 
+        // This will get all the products of a Customer based on the CustomerId using the REST API and the endpoint created.
         public IActionResult Interventions()
         {
-            //http response for building
+            // This gets the buildings of the customer
             HttpClient client = new HttpClient();
             var resbuild = client.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/BuildingsOff/Customers/1").GetAwaiter().GetResult();
             Console.WriteLine(resbuild);
 
-            List<Building> j = JsonConvert.DeserializeObject<List<Building>>(resbuild);
+            List<Building> intmess = JsonConvert.DeserializeObject<List<Building>>(resbuild);
 
-            ViewBag.intMessage = j;
+            ViewBag.intMessage = intmess;
 
-            // http response for batteries
+            // This gets the batteries of the customer
             HttpClient battclient = new HttpClient();
             var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
-            // var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/1/Batteries").GetAwaiter().GetResult();
             Console.WriteLine(resbatt);
 
-            List<Battery> k = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
+            List<Battery> intbatt = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
 
-            ViewBag.intbatteries = k;
+            ViewBag.intbatteries = intbatt;
 
-            // http response for columns
+            // This gets the columns of the customer
             HttpClient colclient = new HttpClient();
             var rescol = colclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
             Console.WriteLine(rescol);
 
-            List<Column> l = JsonConvert.DeserializeObject<List<Column>>(rescol);
+            List<Column> intcol = JsonConvert.DeserializeObject<List<Column>>(rescol);
 
-            ViewBag.intcolumns = l;
+            ViewBag.intcolumns = intcol;
 
-            // http response for columns
+            // This gets the elevators of the customer
             HttpClient elevclient = new HttpClient();
             var reselev = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
             Console.WriteLine(reselev);
 
-            List<Elevator> m = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
+            List<Elevator> intelev = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
 
-            ViewBag.intelevators = m;
+            ViewBag.intelevators = intelev;
+
+            return View();
+
+
+            // This gets the employees
+            HttpClient emplclient = new HttpClient();
+            var resempl = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Employees").GetAwaiter().GetResult();
+            Console.WriteLine(resempl);
+
+            List<Employee> intempl = JsonConvert.DeserializeObject<List<Employee>>(resempl);
+
+            ViewBag.intemployees = intempl;
 
             return View();
         }

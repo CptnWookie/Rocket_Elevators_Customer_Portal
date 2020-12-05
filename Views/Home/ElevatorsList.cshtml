@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Elevators";
-    var m = ViewBag.elevators;
+    var elv = ViewBag.elevators;
 }
 
 <div class="container">
@@ -29,7 +29,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var elevator in m )
+
+                    @* // Will use the ViewBag method to get each of the following component *@
+                    @foreach (var elevator in elv )
                     {
                         <tr>
                             <td>@elevator.Id</td>

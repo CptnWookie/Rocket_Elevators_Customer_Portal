@@ -2,12 +2,14 @@
 
 @inject UserManager<IdentityUser> UserManager
 
+@* // This is the Intervention view *@
 @{
     ViewData["Title"] = "Interventions";
-    var i = ViewBag.intMessage;
-    var k = ViewBag.intbatteries;
-    var l = ViewBag.intcolumns;
-    var m = ViewBag.intelevators;
+    var intmess = ViewBag.intMessage;
+    var intbatt = ViewBag.intbatteries;
+    var intcol = ViewBag.intcolumns;
+    var intelev = ViewBag.intelevators;
+    var intempl = ViewBag.intemployees;
 }
 
 <div class="container">
@@ -18,154 +20,115 @@
 
 <div class="container">
   <form class="col-md-3 mx-auto text-center">
-          
+      
+      @* // Hidden field for the Author of the intervention *@
       <div class="form-group">
         @* <label for="author">Author</label> *@
         <input type="hidden" class="form-control" id="author" name="author">
       </div>
 
+      @* // Hidden field for the Customer in the intervention *@
       <div class="form-group">
         @* <label for="customer">Customer</label> *@
         <input type="hidden" class="form-control" id="customer" name="customer">
       </div>
       
+
+      @* // Selectable field listing all customer's buildings *@
       <div class="form-group">
         <label for="Building">Building</label><br>
         <select class="form-control" id="Building" name="Building">
           <option value="test">Test</option>
-            @foreach(var building in i )
+            @foreach(var building in intmess )
             {
               <option value=''> @building.Id</option>
             }   
         </select>
       </div>
         
+      @* // Selectable field listing all customer's batteries *@
       <div class="form-group">
         <label for="Battery">Battery</label><br>
         <select class="form-control" id="Battery" name="Battery">
           <option value="test">Test</option>
-          @foreach(var battery in k )
+          @foreach(var battery in intbatt )
             {
               <option value=''> @battery.Id</option>
             }   
         </select>
       </div>
         
+
+      @* // Selectable field listing all customer's columns *@
       <div class="form-group">
         <label for="Column">Column</label><br>
         <select class="form-control" id="column" name="column">
           <option value="test">Test</option>
-          @foreach(var column in l )
+          @foreach(var column in intcol )
             {
               <option value=''> @column.Id</option>
             }   
         </select>
       </div>
             
+      @* // Selectable field listing all customer's elevators *@
       <div class="form-group">
         <label for="Elevator">Elevator</label><br>
         <select class="form-control" id="elevator" name="elevator">
           <option value="test">Test</option>
-          @foreach(var elevator in m )
+          @foreach(var elevator in intelev )
             {
               <option value=''> @elevator.Id</option>
             }   
         </select>
       </div>
             
+      @* // Selectable field listing all employees *@
       <div class="form-group">      
         <label for="Employee">Employee</label><br>
         <select class="form-control" id="employee" name="employee">
           <option value="test">Test</option>
+            @foreach(var employee in intelev )
+              {
+                <option value=''> @employee.Id</option>
+              }   
         </select>
       </div>
             
+      @* // Hidden field for the startintervention of the intervention *@
       <div class="form-group">
         @* <label for="StartIntervention">StartIntervention</label><br> *@
         <input type="hidden" class="form-control" id="startintervention" name="startintervention" value="">
       </div>
 
+      @* // Hidden field for the endintervention of the intervention *@
       <div class="form-group">
         @* <label for="EndIntervention">EndIntervention</label><br> *@
         <input type="hidden" class="form-control" id="endintervention" name="endintervention" value="">
       </div>
 
+      @* // Hidden field for the result of the intervention *@
       <div class="form-group">
         @* <label for="Result">Result</label><br> *@
         <input type="hidden" class="form-control" id="result" name="result" value="Incomplete">
       </div>
 
+      @* // Hidden field for the report of the intervention *@
       <div class="form-group">  
         <label for="Report">Report</label><br>
         <textarea class="form-control" id="report" rows="3"></textarea>
       </div>
 
+      @* // Hidden field for the status of the intervention *@
       <div class="form-group">  
         @* <label for="Status">Status</label><br> *@
         <input type="hidden" class="form-control" id="status" name="status" value="Pending">
       </div>
 
+      @* // Submit button *@
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     
 </form>
 </div>
-
-@* <script>
-    var userEmail = '@UserManager.GetUserName(User)';
-    var userId = 0; 
-    //var batteryId = intervention.battery_id;
-    //var columnId = intervention.column_id;
-    //var elevatorId = intervention.elevator_id;  
-    //console.log(userName);
-    //var userId = user.Id;
-   console.log(userEmail);
-    fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/customers/email/" + userEmail).then(response => { return (response.json()) })
-        .then(customer => {
-            //var customer = myjson; //JSON.stringify(myjson);
-            userId = customer.id;
-            fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/buildings/customer/" + customer.id).then(response => { return (response.json()) })
-                .then(buildings => {
-                    console.log(buildings);
-                    if (!buildings)
-
-                        return;
-                    $('#sbuilding').html(buildings.map(x => {
-                        return '<option value="' + x.id + '">' + x.id + '</option>';
-                    }));
-                    if (buildings.length > 0) {
-                        getBatteries(buildings[0].id);
-                    }
-                });
-        });
-    function getBatteries(buildingId) {
-        $("#cnbattery").removeClass("d-none");
-        fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/batteries/building/" + buildingId).then(response => { return (response.json()) })
-            .then(batteries => {
-                if(!batteries)
-                    return;
-                $('#sbattery').html(batteries.map(x => {
-                    return '<option value="' + x.id + '">' + x.id + '</option>';
-                }));
-                if(batteries.length > 0){
-                    getColumns(batteries[0].id);
-                }
-            });
-    }
-function getColumns(batteryid) {
-        $("#cncolumn").removeClass("d-none");
-        fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/colum/batteries/" + batteryid).then(response => { return (response.json()) })
-            .then(columns => {
-                if (!columns){
-                    return;
-                }
-                $('#scolumn').html(columns.map(x => {
-                    return '<option value="' + x.id + '">' + x.id + '</option>';
-                }));
-                if (columns.length > 0){
-                    getElevators(columns[0].id);
-                }
-            });
-}
-</script> *@
