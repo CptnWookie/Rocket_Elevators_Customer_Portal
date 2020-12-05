@@ -1,0 +1,52 @@
+@model Customer
+
+@{
+    ViewData["Title"] = "Elevators";
+    var m = ViewBag.elevators;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Elevators</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <table id="productTable" class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>Elevator ID</th>
+                        <th>Serial Number</th>
+                        <th>Elevator Model</th>
+                        <th>Elevator Type</th>
+                        <th>Elevator Status</th>
+                        <th>Date of Commissioning</th>
+                        <th>Date of Last Inspection</th>
+                        <th>Certificate of Iperation</th>
+                        <th>Information</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var elevator in m )
+                    {
+                        <tr>
+                            <td>@elevator.Id</td>
+                            <td>@elevator.SerialNumber</td>
+                            <td>@elevator.ElevatorModel</td>
+                            <td>@elevator.ElevatorType</td>
+                            <td>@elevator.ElevatorStatus</td>
+                            <td>@elevator.DateOfCommissioning</td>
+                            <td>@elevator.DateOfLastInspection</td>
+                            <td>@elevator.CertificateOfInspection</td>
+                            <td>@elevator.Information</td>
+                            <td>@elevator.Notes</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+  

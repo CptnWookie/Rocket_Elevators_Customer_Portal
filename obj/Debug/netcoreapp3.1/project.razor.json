@@ -14397,8 +14397,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Batteries.cshtml",
-      "TargetPath": "Views\\Home\\Batteries.cshtml",
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\test.cshtml",
+      "TargetPath": "Views\\Home\\test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\BatteriesList.cshtml",
+      "TargetPath": "Views\\Home\\BatteriesList.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14414,6 +14419,11 @@
     {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Interventions.cshtml",
       "TargetPath": "Views\\Home\\Interventions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\ElevatorsList.cshtml",
+      "TargetPath": "Views\\Home\\ElevatorsList.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14472,8 +14482,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Elevators.cshtml",
-      "TargetPath": "Views\\Home\\Elevators.cshtml",
+      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\ColumnsList.cshtml",
+      "TargetPath": "Views\\Home\\ColumnsList.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14484,11 +14494,6 @@
     {
       "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Git\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Columns.cshtml",
-      "TargetPath": "Views\\Home\\Columns.cshtml",
       "FileKind": "mvc"
     },
     {

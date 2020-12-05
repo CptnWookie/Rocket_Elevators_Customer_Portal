@@ -154,13 +154,14 @@ E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Iden
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Batteries.cshtml.g.cs
-E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Columns.cshtml.g.cs
-E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Elevators.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\BatteriesList.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\ColumnsList.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\ElevatorsList.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Interventions.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Portal.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\test.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout (copy).cshtml.g.cs
 E:\Git\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layout.cshtml.g.cs

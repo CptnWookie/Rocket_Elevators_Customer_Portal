@@ -1,0 +1,43 @@
+@model Customer
+
+@{
+    ViewData["Title"] = "Columns";
+    var l = ViewBag.columns;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Columns</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <table id="productTable" class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>Column ID</th>
+                        <th>Column Type</th>
+                        <th>Column Status</th>
+                        <th>Number of Floors Served</th>
+                        <th>Information</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var column in l )
+                    {
+                        <tr>
+                            <td>@column.Id</td>
+                            <td>@column.ColumnType</td>
+                            <td>@column.ColumnStatus</td>
+                            <td>@column.NumberOfFloorsServed</td>
+                            <td>@column.Information</td>
+                            <td>@column.Notes</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,13 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<IdentityUser> UserManager
+
 @{
     ViewData["Title"] = "Interventions";
+    var i = ViewBag.intMessage;
+    var k = ViewBag.intbatteries;
+    var l = ViewBag.intcolumns;
+    var m = ViewBag.intelevators;
 }
 
 <div class="container">
@@ -25,6 +33,10 @@
         <label for="Building">Building</label><br>
         <select class="form-control" id="Building" name="Building">
           <option value="test">Test</option>
+            @foreach(var building in i )
+            {
+              <option value=''> @building.Id</option>
+            }   
         </select>
       </div>
         
@@ -32,6 +44,10 @@
         <label for="Battery">Battery</label><br>
         <select class="form-control" id="Battery" name="Battery">
           <option value="test">Test</option>
+          @foreach(var battery in k )
+            {
+              <option value=''> @battery.Id</option>
+            }   
         </select>
       </div>
         
@@ -39,6 +55,10 @@
         <label for="Column">Column</label><br>
         <select class="form-control" id="column" name="column">
           <option value="test">Test</option>
+          @foreach(var column in l )
+            {
+              <option value=''> @column.Id</option>
+            }   
         </select>
       </div>
             
@@ -46,6 +66,10 @@
         <label for="Elevator">Elevator</label><br>
         <select class="form-control" id="elevator" name="elevator">
           <option value="test">Test</option>
+          @foreach(var elevator in m )
+            {
+              <option value=''> @elevator.Id</option>
+            }   
         </select>
       </div>
             
@@ -87,3 +111,61 @@
     
 </form>
 </div>
+
+@* <script>
+    var userEmail = '@UserManager.GetUserName(User)';
+    var userId = 0; 
+    //var batteryId = intervention.battery_id;
+    //var columnId = intervention.column_id;
+    //var elevatorId = intervention.elevator_id;  
+    //console.log(userName);
+    //var userId = user.Id;
+   console.log(userEmail);
+    fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/customers/email/" + userEmail).then(response => { return (response.json()) })
+        .then(customer => {
+            //var customer = myjson; //JSON.stringify(myjson);
+            userId = customer.id;
+            fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/buildings/customer/" + customer.id).then(response => { return (response.json()) })
+                .then(buildings => {
+                    console.log(buildings);
+                    if (!buildings)
+
+                        return;
+                    $('#sbuilding').html(buildings.map(x => {
+                        return '<option value="' + x.id + '">' + x.id + '</option>';
+                    }));
+                    if (buildings.length > 0) {
+                        getBatteries(buildings[0].id);
+                    }
+                });
+        });
+    function getBatteries(buildingId) {
+        $("#cnbattery").removeClass("d-none");
+        fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/batteries/building/" + buildingId).then(response => { return (response.json()) })
+            .then(batteries => {
+                if(!batteries)
+                    return;
+                $('#sbattery').html(batteries.map(x => {
+                    return '<option value="' + x.id + '">' + x.id + '</option>';
+                }));
+                if(batteries.length > 0){
+                    getColumns(batteries[0].id);
+                }
+            });
+    }
+function getColumns(batteryid) {
+        $("#cncolumn").removeClass("d-none");
+        fetch("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/colum/batteries/" + batteryid).then(response => { return (response.json()) })
+            .then(columns => {
+                if (!columns){
+                    return;
+                }
+                $('#scolumn').html(columns.map(x => {
+                    return '<option value="' + x.id + '">' + x.id + '</option>';
+                }));
+                if (columns.length > 0){
+                    getElevators(columns[0].id);
+                }
+            });
+}
+</script> *@
