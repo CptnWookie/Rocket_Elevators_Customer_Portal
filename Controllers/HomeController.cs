@@ -58,7 +58,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             // http response for batteries
             HttpClient battclient = new HttpClient();
-            var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
+            var resbatt = battclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
             Console.WriteLine(resbatt);
 
             List<Battery> batt = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
@@ -72,7 +72,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         public IActionResult ColumnsList()
         {
             HttpClient colclient = new HttpClient();
-            var rescol = colclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
+            var rescol = colclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
             Console.WriteLine(rescol);
 
             List<Column> col = JsonConvert.DeserializeObject<List<Column>>(rescol);
@@ -86,7 +86,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         public IActionResult ElevatorsList()
         {
             HttpClient elevclient = new HttpClient();
-            var reselev = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
+            var reselev = elevclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
             Console.WriteLine(reselev);
 
             List<Elevator> elv = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
@@ -101,7 +101,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             // This gets the buildings of the customer
             HttpClient client = new HttpClient();
-            var resbuild = client.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/BuildingsOff/Customers/1").GetAwaiter().GetResult();
+            var resbuild = client.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/BuildingsOff/Customers/1").GetAwaiter().GetResult();
             Console.WriteLine(resbuild);
 
             List<Building> intmess = JsonConvert.DeserializeObject<List<Building>>(resbuild);
@@ -110,7 +110,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
             // This gets the batteries of the customer
             HttpClient battclient = new HttpClient();
-            var resbatt = battclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
+            var resbatt = battclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Batteries/Buildings/1").GetAwaiter().GetResult();
             Console.WriteLine(resbatt);
 
             List<Battery> intbatt = JsonConvert.DeserializeObject<List<Battery>>(resbatt);
@@ -119,7 +119,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
             // This gets the columns of the customer
             HttpClient colclient = new HttpClient();
-            var rescol = colclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
+            var rescol = colclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Columns/Batteries/1").GetAwaiter().GetResult();
             Console.WriteLine(rescol);
 
             List<Column> intcol = JsonConvert.DeserializeObject<List<Column>>(rescol);
@@ -128,7 +128,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
             // This gets the elevators of the customer
             HttpClient elevclient = new HttpClient();
-            var reselev = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
+            var reselev = elevclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Elevators/Columns/1").GetAwaiter().GetResult();
             Console.WriteLine(reselev);
 
             List<Elevator> intelev = JsonConvert.DeserializeObject<List<Elevator>>(reselev);
@@ -140,7 +140,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
             // This gets the employees
             HttpClient emplclient = new HttpClient();
-            var resempl = elevclient.GetStringAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Employees").GetAwaiter().GetResult();
+            var resempl = elevclient.GetStringAsync("https://rocketrestapi.azurewebsites.net/api/Employees").GetAwaiter().GetResult();
             Console.WriteLine(resempl);
 
             List<Employee> intempl = JsonConvert.DeserializeObject<List<Employee>>(resempl);

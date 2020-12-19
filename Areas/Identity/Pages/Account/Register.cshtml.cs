@@ -76,7 +76,7 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             // API Resquet to validate email with DB
             var customer = new HttpClient();
-            var responseApi = await customer.GetAsync("https://rocketelevatorsfoundationrestapi.azurewebsites.net/api/Customers");
+            var responseApi = await customer.GetAsync("https://rocketrestapi.azurewebsites.net/api/Customers");
             var content = responseApi.Content.ReadAsStringAsync().Result;
             if (content.Contains(Input.Email))
             {
